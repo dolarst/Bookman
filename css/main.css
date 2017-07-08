@@ -1,0 +1,1851 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+* {
+    margin:0;
+    padding:0;
+    outline: none;
+}
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/OpenSans-Bold.woff') format('woff'),
+  url('../fonts/OpenSans-Bold.ttf')  format('truetype'),
+  url('../fonts/OpenSans-Bold.svg#OpenSans-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}   
+  
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans.eot?#iefix') format('embedded-opentype'), 
+  url('../fonts/OpenSans.woff') format('woff'), 
+  url('../fonts/OpenSans.ttf')  format('truetype'), 
+  url('../fonts/OpenSans.svg#OpenSans') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}  
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+body {
+    font-family:'OpenSans';
+    font-size: 12px;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.pdr0 { padding-right: 0 }
+.pdl0 { padding-left: 0 }
+.mrr0 { margin-right: 0 }
+.mrl0 { margin-left: 0 }
+
+.heardersection{
+	    background: rgb(47, 32, 32);
+}
+.mainheadersection{
+	padding:10px 0;
+}
+.logoimage{
+	
+}
+.logoimage img{
+	    cursor: pointer;
+}
+.navbar {
+  border: 0px solid transparent;
+  margin-bottom: 0;
+  min-height: 50px;
+  position: relative;
+  background: transparent;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #FC8004;
+    font-size: 14px;
+    border-right: 1px solid #FC8004;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.navbar-default .navbar-nav > li:last-child a {
+  border-right: none;
+}
+.navbar-default .navbar-nav > li > a:hover {
+	color:#f76401;
+}
+.navbar-default .navbar-nav > li > a:last-child {
+	
+}
+.last > li > a{
+	border-right:none;
+}
+.navbar-nav>li>a {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+
+.logorighttext {
+    text-align: right;
+}
+.logorighttext h2 {
+    color: #FC8004!important;
+    font-size: 19px;
+    margin-top: 6px;
+    margin-bottom: 2px;
+}
+.logorighttext p {
+    color: #FC8004!important;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+
+
+.hotelsection {
+    background-attachment: fixed!important;
+    background-size: cover!important;
+    background-position: center center!important;
+}
+.mainhotelsection{
+	padding:30px 0;
+}
+.hotelinformation {
+        background: rgba(0, 0, 0, 0.68);
+    padding: 20px;
+}
+.hotelname{}
+.hotelname h2 {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+    font-weight: bold;
+    margin-top: 0;
+}
+.hotelname p {
+    color: #FF6800;
+    margin: 10px 0;
+	    font-size: 14px;
+}
+.hotelname input {
+           width: 100%;
+    height: 35px;
+    padding-left: 20px;
+    background: #fff;
+    border: 0;
+    opacity: 0.6;
+    color: #000;
+}
+.hotelentry{}
+.hotelentryinfo label {
+    position: absolute;
+    top: 28px;
+    left: 55px;
+    font-size: 14px;
+    color: #666;
+}
+.hotelentryinfo{
+	position:relative;
+}
+.hotelentryinfo img {
+    position: absolute;
+    font-size: 30px;
+    color: #595959;
+    left: 15px;
+    top: 32px;
+    cursor: pointer;
+}
+.hotelentryinfo p {
+    background: #909197;
+    text-align: center;
+    margin: 20px 0 5px 0;
+    color: #fff;
+    padding: 4px 0;
+}
+.hotelentryinfo input {
+       width: 100%;
+    height: 45px;
+    padding-left: 55px;
+    margin-top: 26px;
+    padding-top: 17px;
+    border: 0;
+    border-radius: 0!important;
+}
+.hotelentryinfo_search{
+	position:relative;
+}
+.hotelentryinfo_search input{
+	width: 100%;
+    height: 45px;
+    padding-left: 55px;
+    
+    padding-top: 22px;
+    border: 0;
+    border-radius: 0!important;
+}
+.hotelentryinfo_search img{
+	    position: absolute;
+    font-size: 30px;
+    color: #595959;
+    left: 15px;
+    top: 6px;
+    cursor: pointer;
+}
+.hotelentryinfo_search label{
+	 position: absolute;
+    top: 4px;
+    left: 55px;
+    font-size: 14px;
+    color: #666;
+}
+.{}
+.{}
+.{}
+.{}
+.{}
+.{}
+.coola {
+    height: 45px;
+    width: 10px;
+    background: #0095F7;
+    position: absolute;
+    top: 26px;
+}
+.yellow{
+    background: #F6BB00;
+}
+.coola2 {
+    height: 45px;
+    width: 10px;
+    background: #0095F7;
+    position: absolute;
+    top: 0px;
+}
+.yellow2{
+    background: #F6BB00;
+}
+.select_entry_info img{
+	height: 18px;
+    width: 18px;
+}
+.select_entry_info .menimg img{
+	height: 10px;
+    width: 10px;
+}
+.select_entry_info{
+	width: 100%;
+	text-align:center;
+    background: #fff;
+    padding: 5px;
+    position: relative;
+}
+.select_entry_info .left,
+.select_entry_info .right {
+    position: absolute;
+    top: 5px;
+    cursor: pointer;
+    left: 5px;
+}
+.select_entry_info .right {
+    left: auto;
+    right: 5px;
+}
+.select_entry_info2 img{
+	height: 15px;
+    width: 15px;
+}
+
+.select_entry_info2{
+	width: 100%;
+	text-align:center;
+    background: #fff;
+    padding: 5px;
+    position: relative;
+}
+.select_entry_info2 .left,
+.select_entry_info2 .right {
+    position: absolute;
+    top: 5px;
+    cursor: pointer;
+    left: 5px;
+}
+.select_entry_info2 .right {
+    left: auto;
+    right: 5px;
+}
+.hotelentryinfosearch{}
+.hotelentryinfosearch button {
+    width: 100%;
+    height: 30px;
+    padding-left: 15px;
+    margin: 20px 0;
+    background: #FF6800;
+    color: #fff;
+    font-size: 16px;
+	border: #ff6800;
+}
+.destibutton{
+	position:relative;
+}
+.destibutton button {
+    width: 100%;
+    height: 30px;
+    padding-left: 15px;
+    background: #FF6800;
+    color: #fff;
+    font-size: 16px;
+    border: #ff6800;
+    position: absolute;
+   
+}
+.hoteloutput{
+	
+	    position: relative;
+    margin-top: -56px;
+ }
+.hoteloutput a {
+    position: absolute;
+    top: 1px;
+    right: 145px;
+}
+.hoteloutput i {
+        color: #000;
+    font-size: 25px;
+    padding: 2px 0px 0px 4px;
+}
+.hoteloutput button {
+    width: 75%;
+    height: 30px;
+    background: #FC8004;
+    color: #6B2502;
+    border: 0;
+    font-weight: bold;
+    border-radius: 9px;
+}
+.info_icon {
+    position: absolute; top: -4px; right: -16px;
+}
+.hoteloutput input::-webkit-input-placeholder {
+	color: #006287;
+}
+
+
+.destinationsection{}
+.maindestinationsection{
+	margin:30px 0;
+}
+.americahotle{}
+.hotelnametext{}
+.hotelnametext h2 {
+    margin-bottom: 30px;
+	    margin-top: 0px;
+        font-weight: bold;
+}
+.hotelamerica {
+    border: none;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 8px #ddd;
+}
+.hotelamerica img {
+    width: 100%;
+    min-height: 210px;
+}
+.hotelamericatext{}
+.hotelamericatextinfo{}
+.hotel_desc { padding-right: 0; padding-left: 0; }
+.hotelamericatextinfo h3 {
+    color: #5891AC;
+    margin-left: 10px;
+	font-size: 14px;
+}
+.hotelamericatextinfo2{}
+.hotelamericatextinfo2 h3 {
+    color: #ff6800;
+    text-align: -webkit-right;
+    margin-right: 10px;
+	font-size: 11px;
+}
+.footersection{
+	background: #2F2020;
+}
+.mainfootersection{
+	padding:30px 0;
+}
+.footertext{}
+.footertext p {
+    color: #fff;
+    font-size: 15px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 20px;
+}
+.footerbotext{}
+.footerbotext p{
+	color: #fff;
+    font-size: 15px;
+	    padding-top: 20px;
+}
+.hotelamericatextinfo3{
+	    margin: 8px 0;
+}
+.hotelamericatextinfo3 h3 {
+    color: #478BB1;
+    font-size: 11px;
+    margin: 2px;
+}
+.resortsection{}
+.mainresort{}
+.resortinformation{}
+.resorttoptext{}
+.resorttoptext span{
+	width:100%;
+}
+.resorttoptext h2{
+	margin-bottom: 30px;
+    margin-top: 30px;
+    font-weight: bold;
+    width: 100%;
+    background: #fff;
+	padding: 5px 10px;
+    
+    border-bottom: 6px solid #FC8004;
+}
+.resortimage {
+    position: relative;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 8px #ddd;
+}
+.resortimage img {
+    width: 100%;
+	height: 250px;
+}
+.resorttext{}
+.resorttext h2 {
+    font-size: 30px;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+.resorttext p {
+    float: right;
+    right: 31px;
+    position: absolute;
+    bottom: 1px;
+    color: #fff;
+}
+@media (min-width: 1300px)
+bootstrap.min.css:5
+.container {
+    width: 1220px;
+}
+.{}
+.{}
+.{}
+.{}
+
+
+.scrolltoup {
+  bottom: 0;
+  height: 59px;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  width: 55px;
+  cursor:pointer;
+}
+.scrolltoup i {
+  color: #ccc;
+  font-size: 50px;
+  padding-top: 5px;
+}
+
+.search_informationtext{}
+.search_informationtext input {
+        width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    padding-left: 20px;
+    color:#000;
+    font-size: 14px;
+    background: #fff;
+    border: 0;
+    opacity: 0.6;
+}
+.search_informationtext button{
+	width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    text-align: center;
+    border: 0;
+    font-size: 14px;
+    background: #FF6800;
+    color: #fff;
+    font-weight: bold;
+}
+.{}
+.{}
+.{}
+.{}
+.{}
+.{}
+.{}
+.{}
+.{}
+.{}
+.{}
+
+
+
+/* Search page Start*/
+
+
+.searchresultsection{
+	background:#3E4F58;
+}  
+.mainsearchresult{
+	padding:20px 0;
+}  
+.searchinfotoptext {
+    background: #FFFFFF;
+}  
+.searchinfotop{}  
+.searchinfotoptext{}  
+.searchinfotoptext p {
+    padding-left: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+	    margin: 0;
+} 
+.searchinfotoptext span {
+    color: #FF8122;
+} 
+.searchinfomiddle{}  
+.searchinfomiddletext{}  
+.searchinfomiddletext input {
+    width: 100%;
+    height: 30px;
+    margin: 20px 0;
+	padding-left:15px;
+	
+} 
+.searchinfomiddletext button {
+    width: 100%;
+    height: 30px;
+    margin: 20px 0;
+    background: #00B0F0;
+    border: #00B0F0;
+    color: #fff;
+} 
+.searchinfobottom{}  
+.all_searchinfobottomtextinside{}  
+.searchinfobottomtext {
+    background: #fff;
+    height: 45px;
+} 
+.searchinfobottomtextinside{}  
+.searchinfobottomtextinside i {
+    font-size: 35px;
+    color: #ccc;
+    margin-top: 8px;
+}
+.searchinfobottomtextinside p {
+    color: #657F9C;
+    font-size: 14px;
+    margin: 3px 0;
+} 
+.searchinfobottomtextinside1{
+	margin-top:1px;
+}  
+.searchinfobottomtextinside1 p {
+    color: #5CC1E1;
+    margin-top: 0px;
+    margin-bottom: 0px;
+	    font-weight: bold;
+} 
+.searchinfobottomtextinside span {
+    color: #ABDCE5;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+.searchinfobottomtextinside11 {
+    background: #0095F7;
+    height: 50px;
+    width: 100%;
+} 
+ 
+.searchinfobottomtextinside12 {
+    background: #F6BB00;
+    height: 50px;
+    width: 100%;
+}  
+.areasection{}  
+.mainareasection{
+	    padding: 20px 0;
+}  
+.areainformation{
+	position:relative;
+} 
+.allareainformation{
+	width:100%;
+	background:#FFFFFF;
+} 
+.areainformationtext{
+	    width: 18%;
+    float: left;
+    height: 45px;
+	margin-right: 2.5%;
+	background: #92CDDC;
+	position:relative;
+}
+.areainformationtext:last-child{
+	margin-right:0px;
+}
+.areainformationtext p {
+    font-size: 12px;
+    color: #424136;
+    padding-top: 4px;
+    padding-left: 5px;
+    margin-bottom: 4px;
+}
+.areainformationtext i {
+    color: #FF6600;
+    font-size: 17px;
+    left: 181px;
+    position: absolute;
+	cursor: pointer;
+    bottom: 16px;
+} 
+.areainformationtext span {
+    color: #485A5F;
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 3px;
+    padding-left: 5px;
+}
+
+.{} 
+.{} 
+.{} 
+.{} 
+.{} 
+
+.searchinfobottomtextinside3 {
+    
+    width: 50px;
+    height: auto;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 6px;
+}
+.searchinfobottomtextinside3 i {
+    padding-left: 10px;
+    font-size: 29px;
+}
+.searchinfobottomtextinside4 {
+    display: inline-block;
+    width: 277px;
+    vertical-align: top;
+    padding-top: 2px;
+}
+.searchinfobottomtextinside4 p{
+	margin-bottom:0px;
+	font-size: 13px;
+	color: #668E92;
+}  
+.searchinfobottomtextinside4 span{
+	font-size: 13px;
+	color: #4FB1C0;
+}  
+.bgg {
+    background: #0095F7;
+    padding: 20px 7px;
+    width: 25px;
+    display: inline-block;
+    height: 40px;
+} 
+.bg {
+    background: #F6BB00;
+    padding: 20px 7px;
+    width: 25px;
+    display: inline-block;
+    height: 40px;
+}  
+.findhotelsection{}  
+.mainfindhotel{}  
+.hotelinfoleft {
+    padding: 20px 0;
+    background: #FFFFF0;
+    border: 1px solid #D9D9D9;
+    float: left;
+    width: 100%;
+} 
+.hotelinfoleft1 {
+    float: left;
+    width: 120px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    padding: 5px;
+} 
+.hotelinfoleft1 span {
+    color: #7B5B4B;
+    font-size: 16px;
+    cursor: pointer;
+    vertical-align: middle;
+} 
+.hotelinfoleft1 i{
+	font-size: 22px;
+    padding-left: 15px;
+    vertical-align: middle;
+}  
+.hotelinfoleft2{
+	float:right;
+	 width: 120px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}  
+.hotelinfoleft2 span{
+	cursor: pointer;
+	font-size:16px;
+	vertical-align:middle;
+}  
+.hotelinfoleft2 i {
+    color: #ABE33D;
+    font-size: 18px;
+    padding-left: 15px;
+    vertical-align: middle;
+}  
+.hotelinfoleft3 {
+    margin: 6px 0;
+}  
+.hotelinfoleft3 span {
+    color: #8D806D;
+    font-size: 17px;
+}  
+.du{
+	margin-left:0px;
+	padding-left:0px;
+}  
+.fat{
+	
+	padding-right:0px;
+}  
+.filtertext {
+    background: #DDD9C4;
+        padding: 9px 0;
+    display: inline-block;
+    width: 100%;
+}  
+.filtertext p {
+    color: #61503D;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+} 
+.bdttext {
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 10px 0;
+}
+.menu1{
+	padding-right:0;
+}
+.menu2{
+	padding:0;
+	margin:0;
+	
+}
+.menu3{
+	padding:0;
+}
+.menu4{
+	padding:0;
+}
+.menu5{
+	padding:0;
+}
+.menu6{
+	padding-left:0;
+}
+.{}
+.{}
+.{}
+.{}
+.{}
+.bdttext span{
+	font-size: 12px;
+}  
+.bdttext i{
+	color: #2E5585;
+    margin-right: 2px;
+}  
+.pricerancetext {
+    background: #FFFFF7;
+    border: 1px solid #ccc;
+       padding: 15px 10px;
+    border-bottom: 0px;
+}
+.pricetextttc {
+    border: 1px solid #ccc;
+    padding: 5px 15px;
+    height: 80px;
+}
+.pricetextttc label{}  
+.pricetextttc span{}  
+.filtertextbottom{}  
+.botomenu {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    width: 100%;
+    text-align: center;
+    padding: 3px 0;
+    background: #FFFFF7;
+} 
+.botomenu span{
+	color: #7B706C;
+}  
+.starration{
+	    border: 1px solid #ccc;
+		height: 100%;
+		padding: 5px 0;
+}  
+.starration label{
+	margin-left: 15px;
+    
+}  
+.blackcol{
+	
+}
+.blackup{
+	width:100%;
+	height:10px;
+	background:#37454D;
+}
+.hotelimage{}
+.hotelimage img {
+    
+	
+    height: 270px;
+    width: 100%;
+}
+.hotelimagetext {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 272px;
+}
+.staricon{
+	padding: 7px 0;
+}
+.staricon i{
+	color: #F63302;
+    font-size: 18px;
+}
+.hotelimagetext h2 {
+    color: #535054;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+	margin-bottom: 0px;
+}
+.hotelimagetext strong{
+	color:#318170;
+}
+.hotelimagetext p{
+	color: #37454D;
+    font-size: 12px;
+}
+.hotelimagetext h3 {
+    color: #6A757B;
+    font-size: 12px;
+    margin: 7px 0px;
+}
+.hotelimagetext span {
+    color: #009900;
+    font-size: 16px;
+    font-weight: bold;
+}
+.hotelimagetext h4 {
+    color: #7C7C7C;
+    font-size: 16px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+.hotelimagetext button {
+    color: #fff;
+    font-size: 16px;
+    background: green;
+    padding: 6px 30px;
+    border-radius: 32px;
+    border: 0;
+}
+
+.specialoffertext{
+	    border: 1px solid #ccc;
+    height: 272px;
+	    border-right: 0;
+    border-left: 0;
+	padding: 10px 0;
+}
+.specialoffertext h3 {
+    color: #3FB53E;
+    font-size: 16px;
+	margin-top: 5px;
+}
+.specialoffertext h2 {
+    color: #37454D;
+    font-size: 16px;
+}
+.specialoffertext span {
+    color: red;
+    
+    font-weight: bold;
+	cursor: pointer;
+	font-size: 16px;
+}
+.Offertext {
+    border: 1px solid #ccc;
+    height: 272px;
+        padding: 10px 0;
+}
+.Offertext strike {
+    color: red;
+    font-size: 16px;
+    padding-top: 15px;
+}
+.Offertext h2 {
+    color: #339A33;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.Offertext span{
+	border: 1px solid green;
+    color: green;
+    font-size: 13px;
+    padding: 5px 9px;
+    font-weight: bold;
+}
+.Offertext p {
+    margin-top: 44px;
+    color: green;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 39px;
+}
+.Offertext a:hover {
+	text-decoration:none;
+}
+.Offertext a {
+    color: red;
+    font-size: 15px;
+    font-weight: bold;
+}
+.imga{
+	padding-right:0px;
+}
+.texta{
+	padding:0px;
+}
+.spc{
+	padding:0px;
+}
+.off{
+	padding-left:0px;
+}
+.chotoimg{}
+.chotoimg img {
+    width: 100%;
+    height: 60px;
+}
+.ch{
+	padding-right:0px;
+}
+.room{
+	padding:0px;
+}
+.rooma{
+	padding:0px;
+}
+.taka{
+	padding:0;
+	border-left: 0;
+    border-right: 0;
+}
+.vie{
+	padding-left:0;
+}
+.maindetii{
+	background:#FEF2E8;
+}
+.roomdetails{
+	border: 1px solid #FFFFFF;
+	height: 70px;
+}
+.roomdetails h2 {
+    color: #505B60;
+    font-size: 16px;
+    margin-top: 7px;
+    margin-left: 5px;
+}
+.roomdetails span{
+	    color: #37454D;
+    font-size: 12px;
+    margin-left: 7px;
+}
+.roombooking{
+	border: 1px solid #FFFFFF;
+	height: 70px;
+	border-left: 0;
+    border-right: 0;
+}
+.roombooking p {
+    color: #596368;
+    font-size: 16px;
+    margin-top: 7px;
+    margin-bottom: 5px;
+}
+.roombooking span {
+    color: #566065;
+    font-size: 13px;
+}
+.takas{
+	border: 1px solid #FFFFFF;
+	height: 70px;
+}
+.takas h2 {
+    color: #505B60;
+    font-size: 14px;
+    margin-top: 14px;
+    margin-left: 7px;
+}
+.takas i{
+	margin-left:10px;
+}
+.viewdet {
+    border: 1px solid #FFFFFF;
+    height: 70px;
+    background: #00B0F0;
+	padding-top:7px;
+}
+.viewdet a:hover {
+	text-decoration:none;
+}
+.viewdet a {
+    color: #fff;
+    font-size: 12px;
+    margin-top: 23px;
+}
+.viewdet i{
+	margin-left:5px;
+}
+.{}
+.{}
+.{}
+.{}
+.{}
+.{}
+.allstarsec {
+    padding: 0px 10px;
+    background: #FFFFF7;
+    border: 1px solid #ccc;
+    border-bottom: 0px;
+    border-top: 0px;
+    padding-bottom: 15px;
+}
+.squareico{
+	
+}  
+.squareico i{
+	    margin-left: 15px;
+		
+}  
+.circleico{}  
+.circleico p{
+	margin: 2px 0;
+    margin-left: 15px;
+}  
+.circleico input{
+	margin-right: 10px;
+	vertical-align: middle;
+}  
+.circleico i {
+    color: #224777;
+    padding-right: 5px;
+	font-size:16px;
+	vertical-align: middle;
+}
+.squareico2{}  
+.squareico2 p {
+    margin: 2px 0;
+    margin-left: 15px;
+}
+.squareico2 input{
+	    margin-right: 10px;
+		vertical-align: middle;
+} 
+.bolicon{} 
+.squareico2 i{
+	color: #50BE50;
+    padding-right: 5px;
+	font-size:16px;
+	vertical-align: middle;
+}  
+.roomfacilities{
+	    border: 1px solid #ccc;
+    height: 320px;
+	padding:5px 0;
+}  
+.roomperformance{
+	 border: 1px solid #ccc;
+    height: 225px;
+	padding: 5px 0;
+}  
+.landmarkstext{
+	border: 1px solid #ccc;
+    height: 180px;
+}  
+.otherfacitilitstext{
+	border: 1px solid #ccc;
+    height: 180px;
+}  
+.squareico input{
+	margin-left:15px;
+}  
+.propertytext{
+	border: 1px solid #ccc;
+    height: 180px;
+}  
+.roomfacilities{}  
+.roomfacilities label{
+	margin-left:15px;
+}  
+  
+.roomperformance label{
+	margin-left:15px;
+}  
+.landmarkstext{
+	padding: 5px 0;
+}  
+.landmarkstext label{
+	margin-left:15px;
+}  
+.otherfacitilitstext{
+	padding: 5px 0;
+}  
+.otherfacitilitstext label{
+	margin-left:15px;
+}  
+.propertytext{
+	padding: 5px 0;
+}  
+.propertytext label{
+	margin-left:15px;
+}  
+.circleicotext{}
+.circleicotext h4{
+	text-align:center;
+}
+.circleicotext p{
+	margin: 2px 0;
+}
+.circleicotext input{
+	margin-left:15px;
+	margin-right:10px;
+	    vertical-align: middle;
+}
+
+.circleicotext span{
+	font-size: 13px;
+    vertical-align: middle;
+}  
+.squareico2text h4{
+	text-align:center;
+}
+.squareico2text p{
+	margin: 2px 0;
+}
+.squareico2text input{
+	margin-left:15px;
+	margin-right:10px;
+	    vertical-align: middle;
+}
+.squareico2text span{
+	font-size: 13px;
+    vertical-align: middle;
+}  
+.{}  
+.{}  
+
+.{}  
+   
+ /*Search page End*/
+
+ /* confirmation page Start*/
+ 
+ 
+ .reservationconfirmsection{
+	 background:#E8DBA6;
+ } 
+ .mainreservationsection{
+	 margin: 20px 0;
+ }
+ .reservation_confirm{
+	  width: 100%;
+    height: 30px;
+	    background: #fff;
+		padding-top: 8px;
+    padding-left: 10px;
+ }
+ .reservation_confirm span{
+	    
+ }
+ .confirmation_number{
+	width: 100%;
+    height: 34px;
+    background: #fff;
+    padding-left: 10px;
+    border: 2px solid #000066;
+    
+ }
+  .confirmation_number2{
+	 width: 100%;
+    height: 34px;
+    background: #000066;
+    color: #fff;
+    padding-top: 8px;
+    padding-left: 10px;
+  }
+.mon{
+	padding-right:0;
+}
+.tim{
+	padding-left:0;
+}
+.{}
+.{}
+ .confirmation_num{
+	 width: 100%;
+    height: 30px;
+    background: #fff;
+    padding-top: 7px;
+    padding-left: 10px;
+    font-weight: bold;
+	
+ }
+ .confirmationmain{
+	 margin:20px 0;
+ }
+ .confirmation_num span{
+	     
+ }
+ .connumber{
+	 padding-right: 0;
+ }
+ .connumber2{
+	  padding-left: 0;   
+ }
+ .confirmation_num2 span{}
+ .hotelroom_info{
+	     width: 100%;
+    height: 30px;
+    background: #fff;
+    padding-top: 7px;
+    padding-left: 10px;
+ }
+ .hotelroom_info span{
+	     
+ }
+ .hotel_information{
+	 background:#E8DBA6;
+ }
+ .mainhotel_information{
+	    margin-bottom: 20px;
+ }
+ .hotel_information_left{}
+ .hotel_image{}
+ .hotel_image img{
+	 height: 350px;
+	 width:100%;
+ }
+ .hotel_image_text{
+	     width: 100%;
+    background: #fff;
+    height: 173px;
+    padding-top: 40px;
+	margin-bottom: 4px;
+ }
+ .hotel_image_text span{}
+.hotel_image_text2{
+	     width: 100%;
+    background: #fff;
+    height: 173px;
+    padding-top: 40px;
+ }
+  .hotel_image_text2 span{}
+ .hotel_image_text2 label{}
+ .hotel_information_right{}
+ .checkin{
+	 width: 100%;
+    height: 30px;
+    background: #fff;
+    text-align: center;
+	    padding-top: 7px;
+ }
+ .checkin span{
+	 font-weight:bold;
+ }
+ .checkout{
+	 width: 100%;
+    height: 30px;
+    background: #fff;
+    text-align: center;
+	    padding-top: 7px;
+ }
+ .checkout span{
+	 font-weight:bold;
+ }
+ .hotel_info2{
+	 margin:20px 0;
+ }
+ .hotel_info4{
+	  margin:20px 0;
+ }
+ .{}
+ .{}
+ .{}
+ .{}
+ .{}
+ .{}
+ .{}
+ .dater{
+	    width: 100%;
+    background: #fff;
+    height: 30px;
+    padding-top: 7px;
+    padding-left: 5px;
+ }
+ .dater span{
+	 color: #167C6B;
+    font-weight: bold;
+ }
+ .timer{
+	width: 100%;
+    background: #fff;
+    height: 30px;
+    padding-top: 7px;
+    padding-left: 30px;
+ }
+ .timer span{
+	 font-weight: bold;
+ }
+ .geust_name{
+	 width: 100%;
+    background: #fff;
+    height: 30px;
+    padding-top: 7px;
+    padding-left: 5px;
+    font-weight: bold;
+ }
+ .geust_name span{}
+ .rooms_info{
+	 width: 100%;
+    background: #fff;
+    height: 30px;
+    padding-top: 7px;
+    padding-left: 5px;
+    font-weight: bold;
+ }
+ .rooms_info span{}
+ .room_quality{
+	width: 100%;
+    background: #fff;
+    height: 50px;
+    padding-top: 7px;
+    padding-left: 5px;
+    font-weight: bold;
+ }
+ .room_quality span{}
+ .badimage{}
+ .badimage img{
+	 width: 100%;
+    height: 100px;
+ }
+ .badimage_info{
+	     width: 100%;
+    background: #fff;
+    height: 100px;
+    padding-top: 7px;
+    padding-left: 10px;
+ }
+ .badimage_info span{}
+ .mapsection{
+	width:100%;
+	height:300px;
+	background:#E8DBA6;
+	
+}
+#map{
+      width: 100%;
+      height: 300px;
+}
+ .mainmap{
+	 margin-bottom:20px;
+ }
+ .rate_information{
+	 background:#E8DBA6;
+ }
+ .mainrate_info{
+	 margin:20px 0;
+ }
+ .{}
+ .rateinfo1{}
+ .rate_in{
+	     background: #fff;
+    width: 100%;
+    height: 30px;
+    padding-top: 8px;
+ }
+ .rate_in span{
+	     font-weight: bold;
+    cursor: pointer;
+ }
+ .rateinfo2{
+	 margin: 20px 0;
+ }
+ .average_info{
+	 background: #fff;
+    width: 100%;
+    height: 210px;
+	padding: 10px;
+ }
+ .average_info_text{
+	     margin: 8px 0;
+ }
+ .average_info label{}
+ .average_info_text span{}
+ .average_info_text label{}
+ .rateinfo3{
+	     background: #fff;
+    height: 70px;
+    padding: 8px 0;
+ }
+ .special_request_text{}
+ .special_request_text label{
+	     text-decoration: underline;
+    cursor: pointer
+ }
+ .special_request_text span{}
+ .rateinfo4{
+	     margin: 20px 0;
+    background: #fff;
+    height: 35px;
+    width: 100%;
+    padding-top: 8px;
+ }
+ .terms_text{}
+ .terms_text label{
+	     text-decoration: underline;
+		     cursor: pointer;
+ }
+ .rateinfo5{
+	 background: #fff;
+    height: 50px;
+    padding-top: 7px;
+ }
+ .gurar_text{}
+ .gurar_text span{}
+ .rateinfo6{
+	     margin: 20px 0;
+    background: #fff;
+    height: 90px;
+    padding-top: 8px;
+ }
+ .cancellation_text{}
+ .cancellation_text label{
+	  text-decoration: underline;
+		     cursor: pointer;
+ }
+ .cancellation_text span{}
+ .rateinfo7{
+	     background: #fff;
+    height: 80px;
+    padding-top: 8px;
+ }
+ .modify_text{}
+ .modify_text label{
+	  text-decoration: underline;
+		     cursor: pointer;
+ }
+ .modify_text span{}
+ .rateinfo8{
+	     margin: 20px 0;
+    background: #fff;
+    height: 80px;
+    padding-top: 8px;
+ }
+ .yearly_text{}
+ .yearly_text label{
+	  text-decoration: underline;
+		     cursor: pointer;
+ }
+ .yearly_text span{}
+ .rateinfo9{
+	 background: #fff;
+    height: 60px;
+    padding-top: 8px;
+ }
+ .age_requerment_text{}
+ .age_requerment_text label{
+	  text-decoration: underline;
+		     cursor: pointer;
+ }
+ .age_requerment_text span{}
+ .{}
+ .{}
+ .{}
+ .{}
+ .{}
+ .{}
+ .{}
+ .{}
+ .{}
+ .{}
+ .{}
+ .{}
+ .{}
+ .{}
+ .{}
+ .{}
+ .{}
+ .{}
+ .{}
+ .{}
+ .{}
+ .{}
+ .{}
+ .{}
+ .{}
+ .{}
+ .{}
+ 
+ 
+  /* confirmation page End*/
+ 
+ 
+
+
+/* global checkbox, radio */
+/*
+input[type="radio"]:checked, .radio input[type="radio"]:checked, .radio-inline input[type="radio"]:checked, input[type="checkbox"]:checked, .checkbox input[type="checkbox"]:checked, .checkbox-inline input[type="checkbox"]:checked {
+    background: #fff;
+}
+
+input[type="radio"], .radio input[type="radio"], .radio-inline input[type="radio"], input[type="checkbox"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+    position: relative;
+    width: 13px;
+    width: 16px;
+    height: 13px;
+    height: 16px;
+    -webkit-appearance: none;
+    background: white;
+    border: 1px solid #dcdcdc;
+    border-radius: 1px;
+    outline: none;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin: 2px 0 0;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin: 4px 0 0;
+    margin-top: 1px;
+    line-height: normal;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+input[type="checkbox"]:checked::after, .checkbox input[type="checkbox"]:checked::after, .checkbox-inline input[type="checkbox"]:checked::after {
+    position: absolute;
+    top: -6px;
+    left: -5px;
+    display: block;
+    content: url(../img/checkmark.png);
+}
+*/
+/* end global checkbox, radio */
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
